@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url(../assets/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(135deg, #343a40, #212529);
+    color: white;
+    padding: 10px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 5rem;
+}
+
+.search-bar {
+    width: 40%;
+}
+
+.search-bar input {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 90%;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.411);
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    align-self: flex-start;
+    color: #f1f1f1;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #1d1d1d;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #f1f1f1;
+    background-color: #555;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #aeaeaf;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.required {
+    color: red; 
+    font-weight: bold; 
+}
+
+form button:hover {
+    background-color: #318CE7;
+}
+
+.registration-container h1,
+.employee-container h1 {
+    text-align: center;
+}
+
+.employee-container {
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+thead {
+    background-color: #318CE7;
+    color: #f1f1f1;
+}
+
+thead th {
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #f1f1f1;
+}
+
+tbody tr {
+    border-bottom: 1px solid #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #333;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #222;
+}
+
+tbody tr:hover {
+    background-color: #4e4e4e;
+}
+
+tbody td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+tbody td .delete-icon {
+    color: red;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+tbody td .delete-icon:hover {
+    color: darkred;
+}
+
+#pagination {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+#pagination button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #318CE7;
+    color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#pagination button:hover {
+    background-color: #0056b3;
+}
+
+#pagination button:disabled {
+    background-color: #ddd;
+    color: #666;
+    cursor: not-allowed;
+}
+
+footer {
+    background: linear-gradient(135deg, #343a40, #212529);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 7.5rem;
+        right: 0.5rem;
+        width: 11rem;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #menu.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        border-radius: 3px;
+    }
+
+    .search-bar {
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .search-bar input {
+        font-size: 0.9rem;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    tbody td {
+        padding: 10px;
+    }
+
+    #pagination button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        width: 100%;
+        font-size: 0.85rem;
+    }
+
+    tbody td {
+        padding: 6px;
+    }
+
+    #pagination button {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+}
+@media (max-width: 400px) {
+    header{
+        width: 130%;
+    }
+    .search-bar {
+        width: 100%;
+    }
+
+    .search-bar input {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    form label {
+        font-size: 0.85rem;
+    }
+
+    form input, form textarea {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    form button {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    tbody td {
+        padding: 5px;
+    }
+
+    #pagination button {
+        font-size: 0.7rem;
+        padding: 5px 8px;
+    }
+
+    footer {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}
