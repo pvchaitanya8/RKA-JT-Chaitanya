@@ -1,4 +1,4 @@
-# RKA-JT-Chaitanya
+# JS Task - Chaitanya
 ![1](https://github.com/user-attachments/assets/4b85ec99-5926-4347-9d90-2ea0a871b992)
 ![2](https://github.com/user-attachments/assets/88d208ee-86b1-4c4a-b89e-9789b130cabd)
 ![3](https://github.com/user-attachments/assets/a52e95d1-aa40-4dd4-b570-a5a05168efcd)
