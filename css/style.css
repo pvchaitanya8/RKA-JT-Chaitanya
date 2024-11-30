@@ -353,3 +353,64 @@ footer {
         font-size: 0.8rem;
     }
 }
+
+@media (max-width: 401px) {
+    #employeeForm {
+        width: 85%;
+        padding: 20px;
+        margin: 0;
+        box-shadow: none;
+    }
+    header {
+        width: 100%;
+    }
+    .search-bar {
+        width: 100%;
+    }
+
+    .search-bar input {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    form button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+        overflow-x: auto;
+        display: block;
+    }
+
+    tbody td {
+        padding: 8px;
+    }
+
+    #pagination button {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    footer {
+        padding: 16px;
+        font-size: 0.9rem;
+    }
+}
